@@ -1,3 +1,1 @@
 print("hell oowdld")
-
-peintfdlovkdfgfdf
