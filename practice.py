@@ -1,24 +1,29 @@
+try:
+    print ('1. first \n2. second \n3. third \n4. fourth')
+    user_select = int(input("enter your choice: "))
 
-print ('1. first \n2. second \n3. third \n4. fourth')
-user_select = int(input("enter your choice: "))
-
-match user_select:
-    case 1:
-        print ('1')
-    case 2:
-        print ('2')
-    case 3:
-        print("3")
-    case 4:
-        print ('4')
-    case _:
-        print('error')
+    match user_select:
+        case 1:
+            print('1')
+        case 2:
+            print('2')
+        case 3:
+            print("3")
+        case 4:
+            print('4')
+        case _:
+            print('error')
+except ValueError as err1:
+    print('You need to enter a number')
+    print(f'Error: {err1}')
+finally:
+    print('End of entering your choice')
 
 print('\t')
 
 try:
-    num1 = int(input(print('Enter the first number: ')))
-    num2 = int(input(print('Enter the second number: ')))
+    num1 = int(input('Enter the first number: '))
+    num2 = int(input('Enter the second number: '))
 
     result = num1 / num2
     print(f'result: {result}')
