@@ -39,4 +39,20 @@ except Exception as error_3:
     print(f'Error: {error_3}')
 finally:
     print('End of calculation')
+    print('\t')
+
+
+try:
+    user_age = int(input('Enter your age: '))
+
+    if user_age < 0:
+        raise Exception('Age cannot be negative')
+    if user_age < 21:
+        print('Your age is less than 21, so you cannot buy an alcohol')
+    else:
+        print('Cash or Card?')
+except Exception as error_4:
+    print(f'Error: {error_4}')
+
+
 
