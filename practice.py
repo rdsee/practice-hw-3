@@ -53,6 +53,30 @@ try:
         print('Cash or Card?')
 except Exception as error_4:
     print(f'Error: {error_4}')
+print('\t')
+
+i = 1
+while i < 10:
+    print(i, end =" ")
+    i += 1
+
+
+i = 0
+while True:
+
+    i += 2
+
+    if i == 10:
+        print('countinue...')
+        continue
+    if i == 20:
+        print('break')
+        break
+    print(i)
+
+
+
+
 
 
 
