@@ -17,7 +17,8 @@ try:
         case 7:
             print('Sunday')
         case _:
-            print('Invalid input')
-except ValueError as e:
-    print(f'Error {e}')
+            print('Number must be between 1 and 7')
+except ValueError:
+    print(f'Error: You must enter a number!')
+
 
